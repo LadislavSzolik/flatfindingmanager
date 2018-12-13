@@ -9,10 +9,16 @@
 import UIKit
 import MapKit
 
+protocol SelectFlatAddressDelegate {
+    func didSelect(address: FlatAddress)
+}
+
 class AddressFinderTableViewController: BaseTableViewController {
+    
+    var delegate: SelectFlatAddressDelegate?
     var completer = MKLocalSearchCompleter()
     var searchBar = UISearchBar()
-  
+    var resultSet = [FlatAddress]()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -44,7 +50,13 @@ class AddressFinderTableViewController: BaseTableViewController {
         return cell
     }
     
-
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let resultAddress = resultSet[indexPath.row]
+        delegate?.didSelect(address: resultAddress)
+        dismiss(animated: true, completion: nil)
+    }
 
 
 }
@@ -55,7 +67,7 @@ extension AddressFinderTableViewController: MKLocalSearchCompleterDelegate {
         let results = completer.results
         let maxCount = 20
         var counter = 0
-        var resultSet = [FlatAddress]()
+        resultSet = [FlatAddress]()
         for result in results {
             resultSet.append(FlatAddress(title: result.title, subTitle: result.subtitle))
             counter = counter + 1
