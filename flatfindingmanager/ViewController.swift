@@ -7,14 +7,76 @@
 //
 
 import UIKit
+import MapKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MKLocalSearchCompleterDelegate {
 
+    @IBOutlet weak var searchBar: UISearchBar!
+    
+    var completer = MKLocalSearchCompleter()
+    
+    private var resultsTableController: AddressResultsTableViewController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        resultsTableController = AddressResultsTableViewController()
+        resultsTableController.tableView.delegate = self
+        
+        completer.delegate = self
+        completer.region = MKCoordinateRegion(center: CLLocationCoordinate2D.init(latitude: 47.37, longitude: 8.52), span: MKCoordinateSpan.init())
+        completer.filterType = MKLocalSearchCompleter.FilterType.locationsOnly
+        
+        searchBar.delegate = self
+        searchBar.showsCancelButton = true
+        searchBar.becomeFirstResponder()
+    }
+    
+    func completerDidUpdateResults(_ completer: MKLocalSearchCompleter) {
+   
+        
+        let results = completer.results
+        let maxCount = 10
+        var counter = 0
+        var resultSet = [FlatAddress]()
+        for result in results {
+            
+            resultSet.append(FlatAddress(title: result.title, subTitle: result.subtitle))
+            
+            counter = counter + 1
+            if maxCount < counter {
+                break
+            }
+        }
+        
+        
+        resultsTableController.filteredFlatAdress = resultSet
+        resultsTableController.tableView.reloadData()
+        
     }
 
-
+ 
+    
+    
+    
+    
 }
+
+extension ViewController: UITableViewDelegate {
+    
+}
+
+extension ViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+         completer.queryFragment = searchBar.text!
+    }
+    
+}
+
+
+
 

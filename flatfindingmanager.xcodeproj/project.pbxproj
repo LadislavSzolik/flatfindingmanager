@@ -12,6 +12,13 @@
 		84CD385421BEECB600231F39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CD385221BEECB600231F39 /* Main.storyboard */; };
 		84CD385621BEECB700231F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CD385521BEECB700231F39 /* Assets.xcassets */; };
 		84CD385921BEECB700231F39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CD385721BEECB700231F39 /* LaunchScreen.storyboard */; };
+		84CD386121C0DAD100231F39 /* AddressSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD386021C0DAD100231F39 /* AddressSearchTableViewController.swift */; };
+		84CD386321C0DDC100231F39 /* AddressResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD386221C0DDC100231F39 /* AddressResultsTableViewController.swift */; };
+		84CD386521C0DDF800231F39 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD386421C0DDF700231F39 /* BaseTableViewController.swift */; };
+		84CD386721C174F800231F39 /* FlatAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD386621C174F800231F39 /* FlatAddress.swift */; };
+		84CD386B21C1764700231F39 /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CD386A21C1764700231F39 /* TableCell.xib */; };
+		84CD386D21C21B9F00231F39 /* AddressFinderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD386C21C21B9F00231F39 /* AddressFinderTableViewController.swift */; };
+		84CD386F21C2263900231F39 /* AddFlatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD386E21C2263900231F39 /* AddFlatTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		84CD385521BEECB700231F39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84CD385821BEECB700231F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84CD385A21BEECB700231F39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84CD386021C0DAD100231F39 /* AddressSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressSearchTableViewController.swift; sourceTree = "<group>"; };
+		84CD386221C0DDC100231F39 /* AddressResultsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressResultsTableViewController.swift; sourceTree = "<group>"; };
+		84CD386421C0DDF700231F39 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		84CD386621C174F800231F39 /* FlatAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatAddress.swift; sourceTree = "<group>"; };
+		84CD386A21C1764700231F39 /* TableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
+		84CD386C21C21B9F00231F39 /* AddressFinderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressFinderTableViewController.swift; sourceTree = "<group>"; };
+		84CD386E21C2263900231F39 /* AddFlatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFlatTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +70,16 @@
 			children = (
 				84CD384E21BEECB600231F39 /* AppDelegate.swift */,
 				84CD385021BEECB600231F39 /* ViewController.swift */,
-				84CD385221BEECB600231F39 /* Main.storyboard */,
+				84CD386021C0DAD100231F39 /* AddressSearchTableViewController.swift */,
+				84CD386221C0DDC100231F39 /* AddressResultsTableViewController.swift */,
+				84CD386421C0DDF700231F39 /* BaseTableViewController.swift */,
+				84CD386621C174F800231F39 /* FlatAddress.swift */,
 				84CD385521BEECB700231F39 /* Assets.xcassets */,
+				84CD385221BEECB600231F39 /* Main.storyboard */,
+				84CD386E21C2263900231F39 /* AddFlatTableViewController.swift */,
+				84CD386C21C21B9F00231F39 /* AddressFinderTableViewController.swift */,
 				84CD385721BEECB700231F39 /* LaunchScreen.storyboard */,
+				84CD386A21C1764700231F39 /* TableCell.xib */,
 				84CD385A21BEECB700231F39 /* Info.plist */,
 			);
 			path = flatfindingmanager;
@@ -124,6 +145,7 @@
 			files = (
 				84CD385921BEECB700231F39 /* LaunchScreen.storyboard in Resources */,
 				84CD385621BEECB700231F39 /* Assets.xcassets in Resources */,
+				84CD386B21C1764700231F39 /* TableCell.xib in Resources */,
 				84CD385421BEECB600231F39 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84CD386121C0DAD100231F39 /* AddressSearchTableViewController.swift in Sources */,
+				84CD386321C0DDC100231F39 /* AddressResultsTableViewController.swift in Sources */,
+				84CD386521C0DDF800231F39 /* BaseTableViewController.swift in Sources */,
+				84CD386D21C21B9F00231F39 /* AddressFinderTableViewController.swift in Sources */,
+				84CD386F21C2263900231F39 /* AddFlatTableViewController.swift in Sources */,
+				84CD386721C174F800231F39 /* FlatAddress.swift in Sources */,
 				84CD385121BEECB600231F39 /* ViewController.swift in Sources */,
 				84CD384F21BEECB600231F39 /* AppDelegate.swift in Sources */,
 			);
