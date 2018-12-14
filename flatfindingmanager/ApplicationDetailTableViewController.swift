@@ -1,21 +1,21 @@
 //
-//  InterestedTableViewController.swift
+//  ApplicationDetailTableViewController.swift
 //  flatfindingmanager
 //
-//  Created by Ladislav Szolik on 13.12.18.
+//  Created by Ladislav Szolik on 14.12.18.
 //  Copyright © 2018 Ladislav Szolik. All rights reserved.
 //
 
 import UIKit
 
-protocol SelectInterestedOptionDelegate {
-    func didSelect(option: Interested)
+protocol SelectApplicationResponseDelegate {
+    func didSelect(status: ApplicationStatus)
 }
-class InterestedTableViewController: UITableViewController {
-
-    var delegate: SelectInterestedOptionDelegate?
-    var selectedOption:Interested?
+class ApplicationDetailTableViewController: UITableViewController {
     
+    var delegate: SelectApplicationResponseDelegate?
+    var selectedStatus: ApplicationStatus?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableFooterView = UIView()
@@ -28,17 +28,16 @@ class InterestedTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Interested.all.count
+        return ApplicationStatus.all.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath)
         
-        let option = Interested.all[indexPath.row]
-        cell.textLabel?.text = option.title
+        let status = ApplicationStatus.all[indexPath.row]
+        cell.textLabel?.text = status.title
         
-        if option == selectedOption {
+        if status == selectedStatus {
             cell.accessoryType = .checkmark
         } else {
             cell.accessoryType = .none
@@ -49,12 +48,10 @@ class InterestedTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        selectedOption = Interested.all[indexPath.row]
-        delegate?.didSelect(option: selectedOption!)
+        selectedStatus = ApplicationStatus.all[indexPath.row]
+        delegate?.didSelect(status: selectedStatus!)
         tableView.reloadData()
         
     }
-
-    
 
 }

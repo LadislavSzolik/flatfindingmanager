@@ -13,7 +13,7 @@ struct Flat {
     var address: FlatAddress
     var visitDate: Date
     var interested: Interested
-    var applied: AppliedEnum
+    var applied: ApplicationStatus
 }
 
 
@@ -34,8 +34,19 @@ struct Interested: Equatable {
 }
 
 
-enum AppliedEnum {
-    case no, notYet, yes
+struct ApplicationStatus: Equatable {
     
-    static var count: Int { return AppliedEnum.yes.hashValue+1 }
+    var id: Int
+    var title: String
+    
+    static func ==(lhs: ApplicationStatus, rhs: ApplicationStatus) -> Bool {
+        return lhs.id == rhs.id
+    }
+    
+    static var all:[ApplicationStatus]  {
+        return [ApplicationStatus(id: 0, title: "✍️ No"),
+                ApplicationStatus(id: 1, title: "👍 Yes"),
+                ]
+    }
 }
+
