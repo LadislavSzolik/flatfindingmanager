@@ -8,7 +8,3 @@
 
 import Foundation
 
-struct FlatAddress {
-    var title: String
-    var subTitle: String
-}

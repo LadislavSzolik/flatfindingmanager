@@ -9,12 +9,12 @@
 import UIKit
 
 protocol SelectInterestedOptionDelegate {
-    func didSelect(option: Interested)
+    func didSelect(option: InterestedStatus)
 }
 class InterestedTableViewController: UITableViewController {
 
     var delegate: SelectInterestedOptionDelegate?
-    var selectedOption:Interested?
+    var selectedOption:InterestedStatus?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,14 +28,14 @@ class InterestedTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Interested.all.count
+        return InterestedStatus.all.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath)
         
-        let option = Interested.all[indexPath.row]
+        let option = InterestedStatus.all[indexPath.row]
         cell.textLabel?.text = option.title
         
         if option == selectedOption {
@@ -49,7 +49,7 @@ class InterestedTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        selectedOption = Interested.all[indexPath.row]
+        selectedOption = InterestedStatus.all[indexPath.row]
         delegate?.didSelect(option: selectedOption!)
         tableView.reloadData()
         

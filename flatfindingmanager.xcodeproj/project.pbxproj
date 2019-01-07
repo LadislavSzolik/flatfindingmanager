@@ -12,13 +12,17 @@
 		84CD385621BEECB700231F39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CD385521BEECB700231F39 /* Assets.xcassets */; };
 		84CD385921BEECB700231F39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CD385721BEECB700231F39 /* LaunchScreen.storyboard */; };
 		84CD386521C0DDF800231F39 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD386421C0DDF700231F39 /* BaseTableViewController.swift */; };
-		84CD386721C174F800231F39 /* FlatAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD386621C174F800231F39 /* FlatAddress.swift */; };
 		84CD386B21C1764700231F39 /* TableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84CD386A21C1764700231F39 /* TableCell.xib */; };
 		84CD386D21C21B9F00231F39 /* AddressFinderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD386C21C21B9F00231F39 /* AddressFinderTableViewController.swift */; };
 		84CD386F21C2263900231F39 /* AddFlatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD386E21C2263900231F39 /* AddFlatTableViewController.swift */; };
 		84CD387121C2CB7F00231F39 /* Flat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD387021C2CB7F00231F39 /* Flat.swift */; };
 		84CD387321C2EE0100231F39 /* InterestedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD387221C2EE0100231F39 /* InterestedTableViewController.swift */; };
 		84CD387521C3685E00231F39 /* ApplicationDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CD387421C3685E00231F39 /* ApplicationDetailTableViewController.swift */; };
+		9C2E1C9A21C52CCF00C9ACAC /* FlatsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2E1C9921C52CCF00C9ACAC /* FlatsTableViewController.swift */; };
+		9C2E1C9E21C5605F00C9ACAC /* FlatCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2E1C9D21C5605F00C9ACAC /* FlatCellTableViewCell.swift */; };
+		9C6644E121CAACEA00D6701C /* ImageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6644E021CAACEA00D6701C /* ImageCollectionCell.swift */; };
+		9C6644E421CAB5DA00D6701C /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6644E321CAB5DA00D6701C /* PageViewController.swift */; };
+		9C6644E621CAB60600D6701C /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6644E521CAB60600D6701C /* ItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,13 +33,17 @@
 		84CD385821BEECB700231F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84CD385A21BEECB700231F39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84CD386421C0DDF700231F39 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
-		84CD386621C174F800231F39 /* FlatAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatAddress.swift; sourceTree = "<group>"; };
 		84CD386A21C1764700231F39 /* TableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableCell.xib; sourceTree = "<group>"; };
 		84CD386C21C21B9F00231F39 /* AddressFinderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressFinderTableViewController.swift; sourceTree = "<group>"; };
 		84CD386E21C2263900231F39 /* AddFlatTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFlatTableViewController.swift; sourceTree = "<group>"; };
 		84CD387021C2CB7F00231F39 /* Flat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flat.swift; sourceTree = "<group>"; };
 		84CD387221C2EE0100231F39 /* InterestedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestedTableViewController.swift; sourceTree = "<group>"; };
 		84CD387421C3685E00231F39 /* ApplicationDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDetailTableViewController.swift; sourceTree = "<group>"; };
+		9C2E1C9921C52CCF00C9ACAC /* FlatsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatsTableViewController.swift; sourceTree = "<group>"; };
+		9C2E1C9D21C5605F00C9ACAC /* FlatCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatCellTableViewCell.swift; sourceTree = "<group>"; };
+		9C6644E021CAACEA00D6701C /* ImageCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionCell.swift; sourceTree = "<group>"; };
+		9C6644E321CAB5DA00D6701C /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		9C6644E521CAB60600D6701C /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,20 +77,56 @@
 			isa = PBXGroup;
 			children = (
 				84CD384E21BEECB600231F39 /* AppDelegate.swift */,
-				84CD386421C0DDF700231F39 /* BaseTableViewController.swift */,
-				84CD386621C174F800231F39 /* FlatAddress.swift */,
+				84CD387021C2CB7F00231F39 /* Flat.swift */,
 				84CD385521BEECB700231F39 /* Assets.xcassets */,
 				84CD385221BEECB600231F39 /* Main.storyboard */,
-				84CD387021C2CB7F00231F39 /* Flat.swift */,
+				84CD386421C0DDF700231F39 /* BaseTableViewController.swift */,
+				9C6644E021CAACEA00D6701C /* ImageCollectionCell.swift */,
 				84CD386E21C2263900231F39 /* AddFlatTableViewController.swift */,
-				84CD386C21C21B9F00231F39 /* AddressFinderTableViewController.swift */,
-				84CD387221C2EE0100231F39 /* InterestedTableViewController.swift */,
-				84CD387421C3685E00231F39 /* ApplicationDetailTableViewController.swift */,
+				9C6644E921CAB65F00D6701C /* Flat List */,
+				9C6644E821CAB61D00D6701C /* AddressFinder */,
+				9C6644E721CAB60C00D6701C /* Pages */,
+				9C6644E221CAB42100D6701C /* Status */,
 				84CD385721BEECB700231F39 /* LaunchScreen.storyboard */,
 				84CD386A21C1764700231F39 /* TableCell.xib */,
 				84CD385A21BEECB700231F39 /* Info.plist */,
 			);
 			path = flatfindingmanager;
+			sourceTree = "<group>";
+		};
+		9C6644E221CAB42100D6701C /* Status */ = {
+			isa = PBXGroup;
+			children = (
+				84CD387221C2EE0100231F39 /* InterestedTableViewController.swift */,
+				84CD387421C3685E00231F39 /* ApplicationDetailTableViewController.swift */,
+			);
+			path = Status;
+			sourceTree = "<group>";
+		};
+		9C6644E721CAB60C00D6701C /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				9C6644E321CAB5DA00D6701C /* PageViewController.swift */,
+				9C6644E521CAB60600D6701C /* ItemViewController.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		9C6644E821CAB61D00D6701C /* AddressFinder */ = {
+			isa = PBXGroup;
+			children = (
+				84CD386C21C21B9F00231F39 /* AddressFinderTableViewController.swift */,
+			);
+			path = AddressFinder;
+			sourceTree = "<group>";
+		};
+		9C6644E921CAB65F00D6701C /* Flat List */ = {
+			isa = PBXGroup;
+			children = (
+				9C2E1C9D21C5605F00C9ACAC /* FlatCellTableViewCell.swift */,
+				9C2E1C9921C52CCF00C9ACAC /* FlatsTableViewController.swift */,
+			);
+			path = "Flat List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,11 +202,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				84CD387521C3685E00231F39 /* ApplicationDetailTableViewController.swift in Sources */,
+				9C2E1C9E21C5605F00C9ACAC /* FlatCellTableViewCell.swift in Sources */,
+				9C6644E421CAB5DA00D6701C /* PageViewController.swift in Sources */,
 				84CD386521C0DDF800231F39 /* BaseTableViewController.swift in Sources */,
+				9C6644E121CAACEA00D6701C /* ImageCollectionCell.swift in Sources */,
+				9C6644E621CAB60600D6701C /* ItemViewController.swift in Sources */,
 				84CD386D21C21B9F00231F39 /* AddressFinderTableViewController.swift in Sources */,
 				84CD387321C2EE0100231F39 /* InterestedTableViewController.swift in Sources */,
+				9C2E1C9A21C52CCF00C9ACAC /* FlatsTableViewController.swift in Sources */,
 				84CD386F21C2263900231F39 /* AddFlatTableViewController.swift in Sources */,
-				84CD386721C174F800231F39 /* FlatAddress.swift in Sources */,
 				84CD387121C2CB7F00231F39 /* Flat.swift in Sources */,
 				84CD384F21BEECB600231F39 /* AppDelegate.swift in Sources */,
 			);
@@ -317,10 +365,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ch.szolik.flatfindingmanager;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.szolik.homekey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -335,10 +383,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ch.szolik.flatfindingmanager;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.szolik.homekey;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
